@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9019"/>
+    </dependencies>
+    <scenes>
+        <!--Clone-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="Clone" id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <imageView width="65" height="65" alignment="center" image="Clone Logo" contentMode="scaleAspectFill" id="GMp-sV-RcQ"/>
+                        <button width="1" alignment="left" title="Feed" id="vhl-9F-KAd">
+                            <connections>
+                                <segue destination="kwK-SY-Lec" kind="push" id="38S-dQ-Cfk"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Profile" id="aT0-rz-v6x">
+                            <connections>
+                                <segue destination="ROJ-BV-dHb" kind="push" id="dij-Ff-3FX"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="feedInterfaceButton" destination="vhl-9F-KAd" id="IjP-OA-VWn"/>
+                        <outlet property="profileInterfaceButton" destination="aT0-rz-v6x" id="omm-vl-sOU"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="235" y="347"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="mGm-EI-oeb">
+            <objects>
+                <controller title="Profile" id="ROJ-BV-dHb" customClass="ProfilePageInterfaceController" customModule="CloneWatch_Extension">
+                    <items>
+                        <group width="40" height="40" alignment="center" radius="20" id="9Fi-Z3-qV8">
+                            <items>
+                                <imageView width="40" height="40" alignment="left" contentMode="scaleAspectFill" id="s8A-CR-DXW" userLabel="Profile Pic"/>
+                            </items>
+                        </group>
+                        <label alignment="center" text="Username" textAlignment="center" numberOfLines="0" id="aJa-Ud-dXG"/>
+                        <label alignment="center" text="Real Name" textAlignment="center" numberOfLines="0" id="6cH-VJ-6K0"/>
+                        <label alignment="center" text="Bio" textAlignment="center" numberOfLines="0" id="MZG-LA-AxJ">
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                        </label>
+                        <label alignment="center" text="Loading posts..." id="RS4-R3-Zuh">
+                            <fontDescription key="font" type="system" pointSize="18"/>
+                        </label>
+                        <imageView alignment="center" image="Activity1" contentMode="scaleAspectFill" id="yXO-xC-6Ma"/>
+                        <table alignment="left" id="ay6-1t-xT5" userLabel="Posts Table">
+                            <items>
+                                <tableRow identifier="post" id="JaI-iZ-gs2" customClass="FeedRowController">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="Z6U-qZ-SGA" userLabel="Row Controller">
+                                        <items>
+                                            <group width="1" alignment="left" id="I2w-V5-uDy">
+                                                <items>
+                                                    <group width="30" height="30" alignment="left" radius="15" id="pYx-9L-LG7" userLabel="Profile Pic Group">
+                                                        <items>
+                                                            <imageView width="30" height="30" alignment="left" contentMode="scaleAspectFill" id="npb-Fu-sko"/>
+                                                        </items>
+                                                    </group>
+                                                    <label alignment="left" verticalAlignment="center" text="Username" id="ZiO-G7-PXf">
+                                                        <fontDescription key="font" type="system" pointSize="14"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                            <label alignment="left" text="Post Content" numberOfLines="0" id="3bF-dM-zZS">
+                                                <fontDescription key="font" type="system" pointSize="14"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="postContentInterfaceLabel" destination="3bF-dM-zZS" id="zHU-EQ-beJ"/>
+                                        <outlet property="profilePicInterfaceImage" destination="npb-Fu-sko" id="jSg-ax-XXp"/>
+                                        <outlet property="usernameInterfaceLabel" destination="ZiO-G7-PXf" id="ahg-eL-fSQ"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="bioInterfaceLabel" destination="MZG-LA-AxJ" id="Byb-OW-cSI"/>
+                        <outlet property="loadingIndicator" destination="yXO-xC-6Ma" id="pWV-U8-U8y"/>
+                        <outlet property="loadingInterfaceLabel" destination="RS4-R3-Zuh" id="8ka-dw-3eh"/>
+                        <outlet property="postsInterfaceTable" destination="ay6-1t-xT5" id="SLx-gj-Ajp"/>
+                        <outlet property="profilePicInterfaceImage" destination="s8A-CR-DXW" id="mUR-lP-5gz"/>
+                        <outlet property="realNameInterfaceLabel" destination="6cH-VJ-6K0" id="u9e-Wo-ET1"/>
+                        <outlet property="usernameInterfaceLabel" destination="aJa-Ud-dXG" id="8te-ke-XE2"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="432" y="458"/>
+        </scene>
+        <!-- -->
+        <scene sceneID="H6R-9P-nbh">
+            <objects>
+                <controller identifier="login" title=" " id="vgq-D2-uo9" customClass="LoginActivityInterfaceController">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Logging in..." id="Mb5-gf-5aL">
+                            <fontDescription key="font" type="system" pointSize="18"/>
+                        </label>
+                        <imageView alignment="center" verticalAlignment="center" image="Activity1" contentMode="scaleAspectFill" id="GAH-vM-4vj"/>
+                    </items>
+                    <connections>
+                        <outlet property="loginActivity" destination="GAH-vM-4vj" id="v3k-Eh-Cpz"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="624" y="535"/>
+        </scene>
+        <!--Feed-->
+        <scene sceneID="ILO-aK-5xG">
+            <objects>
+                <controller title="Feed" id="kwK-SY-Lec" customClass="FeedInterfaceController" customModule="CloneWatch_Extension">
+                    <items>
+                        <table alignment="left" id="rcH-X7-7Co" userLabel="Feed Table">
+                            <items>
+                                <tableRow identifier="post" id="IIz-po-n6o" customClass="FeedRowController">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="HAd-pS-RWz" userLabel="Row Controller">
+                                        <items>
+                                            <group width="1" alignment="left" id="X9V-qf-xHo">
+                                                <items>
+                                                    <group width="30" height="30" alignment="left" radius="15" id="CXh-hf-Ndj" userLabel="Profile Pic Group">
+                                                        <items>
+                                                            <imageView width="30" height="30" alignment="left" contentMode="scaleAspectFill" id="TMQ-e7-Z9M"/>
+                                                        </items>
+                                                    </group>
+                                                    <label alignment="left" verticalAlignment="center" text="Username" id="7P5-sv-9Qy">
+                                                        <fontDescription key="font" type="system" pointSize="14"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                            <label alignment="left" text="Post Content" numberOfLines="0" id="SVS-Lc-dj7">
+                                                <fontDescription key="font" type="system" pointSize="14"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="postContentInterfaceLabel" destination="SVS-Lc-dj7" id="O9x-m4-zdy"/>
+                                        <outlet property="profilePicInterfaceImage" destination="TMQ-e7-Z9M" id="bbH-O9-weB"/>
+                                        <outlet property="usernameInterfaceLabel" destination="7P5-sv-9Qy" id="4CO-71-DTX"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <label alignment="center" verticalAlignment="center" text="Loading feed..." id="ycM-f7-UbL">
+                            <fontDescription key="font" type="system" pointSize="18"/>
+                        </label>
+                        <imageView alignment="center" verticalAlignment="center" image="Activity1" contentMode="scaleAspectFill" id="RDP-V0-BwZ"/>
+                    </items>
+                    <menu key="menu" id="S06-ha-bxY">
+                        <items>
+                            <menuItem title="Compose" image="Compose" id="2Xt-4z-rZi">
+                                <connections>
+                                    <action selector="composePressed" destination="kwK-SY-Lec" id="G24-Rv-BWu"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="feedInterfaceTable" destination="rcH-X7-7Co" id="opl-IB-uG5"/>
+                        <outlet property="loadingIndicator" destination="RDP-V0-BwZ" id="dgF-XC-1TS"/>
+                        <outlet property="loadingInterfaceLabel" destination="ycM-f7-UbL" id="CsY-Ix-NJJ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="432" y="197"/>
+        </scene>
+        <!--Done-->
+        <scene sceneID="iIx-rj-qlO">
+            <objects>
+                <controller identifier="image" title="Done" id="ypl-6K-W1R" customClass="ImageInterfaceController" customModule="CloneWatch_Extension">
+                    <items>
+                        <imageView alignment="center" verticalAlignment="center" contentMode="scaleAspectFill" id="zA5-qn-h3g" userLabel="Post Image"/>
+                        <label alignment="center" verticalAlignment="center" text="Loading image..." numberOfLines="0" id="V8j-XF-aDQ">
+                            <fontDescription key="font" type="system" pointSize="18"/>
+                        </label>
+                        <imageView alignment="center" verticalAlignment="center" image="Activity1" contentMode="scaleAspectFill" id="BV7-sk-SXd"/>
+                    </items>
+                    <connections>
+                        <outlet property="loadingIndicator" destination="BV7-sk-SXd" id="5Ti-Ce-49W"/>
+                        <outlet property="loadingInterfaceLabel" destination="V8j-XF-aDQ" id="w4w-6Q-7Nk"/>
+                        <outlet property="postInterfaceImage" destination="zA5-qn-h3g" id="ItM-9Q-ygV"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="624" y="299"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="BOz-TT-tkC">
+            <objects>
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController">
+                    <items>
+                        <group alignment="left" id="t8f-Gd-c4y">
+                            <items>
+                                <imageView width="40" height="40" alignment="left" image="Clone Logo" contentMode="scaleAspectFill" id="Omc-0I-sZC"/>
+                                <label width="75" alignment="left" verticalAlignment="center" text="Latest post" numberOfLines="0" id="QRY-B2-F9v">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group alignment="left" layout="vertical" id="uCw-4Q-Ouw">
+                            <items>
+                                <group width="1" alignment="left" id="IYd-da-GJj" userLabel="Username and date">
+                                    <items>
+                                        <label alignment="left" text="Username" id="Wzk-Hg-I3n">
+                                            <fontDescription key="font" type="system" pointSize="14"/>
+                                        </label>
+                                        <label alignment="right" text="Date" id="BQ7-nV-iG7">
+                                            <fontDescription key="font" type="system" pointSize="14"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <label alignment="left" text="Post content" numberOfLines="0" id="b9n-AT-OjE"/>
+                                <imageView width="1" height="65" alignment="left" id="X2i-A5-eUU"/>
+                            </items>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="dateInterfaceLabel" destination="BQ7-nV-iG7" id="6hS-WM-GKV"/>
+                        <outlet property="headerInterfaceLabel" destination="QRY-B2-F9v" id="o2a-8M-Rcf"/>
+                        <outlet property="postContentInterfaceLabel" destination="b9n-AT-OjE" id="a5W-5g-2ga"/>
+                        <outlet property="postInterfaceImage" destination="X2i-A5-eUU" id="mUz-FP-yUA"/>
+                        <outlet property="usernameInterfaceLabel" destination="Wzk-Hg-I3n" id="nOV-SX-niT"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="235" y="672"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="XkS-y5-khE"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
+                        <segue destination="gdX-wl-uQE" kind="relationship" relationship="dynamicNotificationInterface" id="fKh-qV-3T2"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="235" y="1001"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="KIl-fV-djm">
+            <objects>
+                <controller id="gdX-wl-uQE" customClass="NotificationController"/>
+            </objects>
+            <point key="canvasLocation" x="553" y="1001"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.10980392160000001" green="0.61960784310000006" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+</document>

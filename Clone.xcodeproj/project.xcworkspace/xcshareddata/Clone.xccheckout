@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>ACCC4E76-221C-48FA-8518-33D6EE29C09D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Clone</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A5A7A64615D596F337A1FCBFF0760A38BB522922</key>
+		<string>https://github.com/BananaFudgkins/Clone-Source.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Clone.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A5A7A64615D596F337A1FCBFF0760A38BB522922</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/BananaFudgkins/Clone-Source.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A5A7A64615D596F337A1FCBFF0760A38BB522922</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A5A7A64615D596F337A1FCBFF0760A38BB522922</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Clone</string>
+		</dict>
+	</array>
+</dict>
+</plist>

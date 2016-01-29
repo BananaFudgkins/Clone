@@ -9,15 +9,110 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>CloneWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Glance - CloneWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Notification - CloneWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>ShareExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>68004A791BDDAE2900E11A71</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>680527081B82D12900A20FF7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>6805271B1B82D12900A20FF7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>681CB78F1BCAF7D000A518F3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>682442671B93F66B007154DF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>684A2A2A1BF2F9490079396D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6868FC5D1B8F7EFC00920F3D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6868FC821B8F7F3800920F3D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>687C7CB41B840C2E00C37A1D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>688C90391B82F3170058A707</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>689069051BDF179F00F6AD9F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68965F3F1BDC1AF60097D4C6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68965F571BDC1AF60097D4C6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68965F621BDC1AF60097D4C6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68AB6B261BD42D210048C24D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68B48BCD1BDD42C100CDBB5B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68C55FEF1BDD4AD70014A820</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,0 +1,204 @@
+
+/* Class = "UIButton"; normalTitle = "Reset Password"; ObjectID = "4iB-Pf-YZt"; */
+"4iB-Pf-YZt.normalTitle" = "Réinitialiser mot de passe";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "5gN-7o-Bae"; */
+"5gN-7o-Bae.title" = "Paramètres";
+
+/* Class = "UINavigationItem"; title = "Feed"; ObjectID = "6L2-bv-vFa"; */
+"6L2-bv-vFa.title" = "Se nourrir";
+
+/* Class = "UIButton"; normalTitle = "Edit Profile"; ObjectID = "6Z4-hK-4FS"; */
+"6Z4-hK-4FS.normalTitle" = "Modifier le profil";
+
+/* Class = "UIButton"; normalTitle = "Open Source Libraries"; ObjectID = "6i6-DG-Fev"; */
+"6i6-DG-Fev.normalTitle" = "Bibliothèques Open Source";
+
+/* Class = "UIBarButtonItem"; title = "Follow"; ObjectID = "7Kb-wV-ocM"; */
+"7Kb-wV-ocM.title" = "Suivez";
+
+/* Class = "UITableViewSection"; headerTitle = "Account"; ObjectID = "8Xc-7N-zhY"; */
+"8Xc-7N-zhY.headerTitle" = "Compte";
+
+/* Class = "UILabel"; text = "Like Notifications"; ObjectID = "AFY-QY-NXB"; */
+"AFY-QY-NXB.text" = "Comme les Notifications";
+
+/* Class = "UILabel"; text = "Comment Notifications"; ObjectID = "ATQ-fM-0GP"; */
+"ATQ-fM-0GP.text" = "Notifications de commentaire";
+
+/* Class = "UILabel"; text = "Username"; ObjectID = "C6w-Bn-4x5"; */
+"C6w-Bn-4x5.text" = "Nom d'utilisateur";
+
+/* Class = "UINavigationItem"; title = "User Terms"; ObjectID = "CD4-D7-cee"; */
+"CD4-D7-cee.title" = "Conditions d'utilisation";
+
+/* Class = "UILabel"; text = "Real Name"; ObjectID = "Czq-nO-4BH"; */
+"Czq-nO-4BH.text" = "De son vrai nom";
+
+/* Class = "UIButton"; normalTitle = "Privacy Policy"; ObjectID = "EOP-47-ouu"; */
+"EOP-47-ouu.normalTitle" = "Politique de confidentialité";
+
+/* Class = "UILabel"; text = "Date Label"; ObjectID = "EUf-Za-OMN"; */
+"EUf-Za-OMN.text" = "Étiquette de date";
+
+/* Class = "UIButton"; normalTitle = "Push Notification Settings"; ObjectID = "EZM-Ic-Vbe"; */
+"EZM-Ic-Vbe.normalTitle" = "Paramètres de notification push";
+
+/* Class = "UITextField"; placeholder = "Real Name"; ObjectID = "Eua-XX-5lx"; */
+"Eua-XX-5lx.placeholder" = "De son vrai nom";
+
+/* Class = "UINavigationItem"; title = "Open Source Libraries"; ObjectID = "F18-w3-WLd"; */
+"F18-w3-WLd.title" = "Bibliothèques Open Source";
+
+/* Class = "UINavigationItem"; title = "Comments"; ObjectID = "FeY-C8-qJl"; */
+"FeY-C8-qJl.title" = "Commentaires";
+
+/* Class = "UIButton"; normalTitle = "Terms"; ObjectID = "Fht-5d-dTq"; */
+"Fht-5d-dTq.normalTitle" = "Conditions";
+
+/* Class = "UINavigationItem"; title = "Username"; ObjectID = "GIS-4D-1y2"; */
+"GIS-4D-1y2.title" = "Nom d'utilisateur";
+
+/* Class = "UINavigationItem"; title = "Notifications"; ObjectID = "GgA-o9-qYx"; */
+"GgA-o9-qYx.title" = "Notifications";
+
+/* Class = "UITextView"; text = "Post content"; ObjectID = "HNJ-uL-Al5"; */
+"HNJ-uL-Al5.text" = "Post content";
+
+/* Class = "UINavigationItem"; title = "Post"; ObjectID = "JE2-KC-pZt"; */
+"JE2-KC-pZt.title" = "Publier";
+
+/* Class = "UIButton"; normalTitle = "Change Profile Photo"; ObjectID = "KBH-ju-1Tj"; */
+"KBH-ju-1Tj.normalTitle" = "Photo de profil de changement";
+
+/* Class = "UILabel"; text = "0 Likes"; ObjectID = "LFI-Vc-vsc"; */
+"LFI-Vc-vsc.text" = "0 Likes";
+
+/* Class = "UILabel"; text = "Post content"; ObjectID = "Lhl-et-nPf"; */
+"Lhl-et-nPf.text" = "Post content";
+
+/* Class = "UILabel"; text = "Date Label"; ObjectID = "N9D-eY-enk"; */
+"N9D-eY-enk.text" = "Date Label";
+
+/* Class = "UILabel"; text = "Post content"; ObjectID = "Pes-YJ-Mss"; */
+"Pes-YJ-Mss.text" = "Post content";
+
+/* Class = "UILabel"; text = "Real name"; ObjectID = "QYE-ka-JoH"; */
+"QYE-ka-JoH.text" = "Real name";
+
+/* Class = "UILabel"; text = "Date Label"; ObjectID = "QkU-vh-7Fk"; */
+"QkU-vh-7Fk.text" = "Date Label";
+
+/* Class = "UITableViewSection"; footerTitle = "Get notified when someone comments on your post."; ObjectID = "SDE-cs-8Em"; */
+"SDE-cs-8Em.footerTitle" = "Reçois des messages quand quelqu'un commentaires sur votre post.";
+
+/* Class = "UITableViewSection"; headerTitle = "Comments"; ObjectID = "SDE-cs-8Em"; */
+"SDE-cs-8Em.headerTitle" = "Commentaires";
+
+/* Class = "UILabel"; text = "New Follower Notifications"; ObjectID = "UZw-c8-4jJ"; */
+"UZw-c8-4jJ.text" = "Nouvelles notifications de suiveur";
+
+/* Class = "UILabel"; text = "0 Likes"; ObjectID = "UaX-Dt-a8H"; */
+"UaX-Dt-a8H.text" = "0 Likes";
+
+/* Class = "UILabel"; text = "Username"; ObjectID = "Vda-Rw-pc4"; */
+"Vda-Rw-pc4.text" = "Username";
+
+/* Class = "UITableViewSection"; footerTitle = "Tab bar images provided by icons8.com"; ObjectID = "VwJ-bm-0nF"; */
+"VwJ-bm-0nF.footerTitle" = "Tab bar images fournies par icons8.com";
+
+/* Class = "UITableViewSection"; headerTitle = "About"; ObjectID = "VwJ-bm-0nF"; */
+"VwJ-bm-0nF.headerTitle" = "About";
+
+/* Class = "UINavigationItem"; title = "Username"; ObjectID = "W1B-VC-6oT"; */
+"W1B-VC-6oT.title" = "Username";
+
+/* Class = "UILabel"; text = "Username"; ObjectID = "XFs-uj-23k"; */
+"XFs-uj-23k.text" = "Username";
+
+/* Class = "UITableViewSection"; footerTitle = "Get notified when people like your posts."; ObjectID = "XH7-FY-b4R"; */
+"XH7-FY-b4R.footerTitle" = "Reçois des messages quand les gens aiment vos messages.";
+
+/* Class = "UITableViewSection"; headerTitle = "Likes"; ObjectID = "XH7-FY-b4R"; */
+"XH7-FY-b4R.headerTitle" = "Aime";
+
+/* Class = "UITabBarItem"; title = "Profile"; ObjectID = "Xav-NE-uEV"; */
+"Xav-NE-uEV.title" = "Voir le profil";
+
+/* Class = "UINavigationItem"; title = "Privacy Policy"; ObjectID = "YHs-0p-9fU"; */
+"YHs-0p-9fU.title" = "Politique de confidentialité";
+
+/* Class = "UINavigationItem"; title = "Compose"; ObjectID = "ZaC-nX-C2a"; */
+"ZaC-nX-C2a.title" = "Composer";
+
+/* Class = "UILabel"; text = "Following"; ObjectID = "Zwc-2n-z2u"; */
+"Zwc-2n-z2u.text" = "Suite";
+
+/* Class = "UILabel"; text = "Username"; ObjectID = "bIs-8v-wwf"; */
+"bIs-8v-wwf.text" = "Username";
+
+/* Class = "UILabel"; text = "Post content"; ObjectID = "byC-gw-eoP"; */
+"byC-gw-eoP.text" = "Post content";
+
+/* Class = "UIButton"; normalTitle = "Log Out"; ObjectID = "ccd-jJ-DhW"; */
+"ccd-jJ-DhW.normalTitle" = "Fermer la session";
+
+/* Class = "UILabel"; text = "Save Photos from Post"; ObjectID = "cun-TP-GnG"; */
+"cun-TP-GnG.text" = "Enregistrer des photos de poste";
+
+/* Class = "UILabel"; text = "0 Likes"; ObjectID = "fpQ-MG-i0a"; */
+"fpQ-MG-i0a.text" = "0 Likes";
+
+/* Class = "UITextField"; placeholder = "Username"; ObjectID = "hGK-Yv-UoQ"; */
+"hGK-Yv-UoQ.placeholder" = "Nom d'utilisateur";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "hyT-Iy-thM"; */
+"hyT-Iy-thM.title" = "Accueil";
+
+/* Class = "UITableViewSection"; footerTitle = "Save photos from posts you compose to your photo library"; ObjectID = "iAM-22-up1"; */
+"iAM-22-up1.footerTitle" = "Enregistrer des photos à partir de messages que vous composez à votre bibliothèque de photos";
+
+/* Class = "UITableViewSection"; headerTitle = "Settings"; ObjectID = "iAM-22-up1"; */
+"iAM-22-up1.headerTitle" = "Paramètres";
+
+/* Class = "UITableViewSection"; footerTitle = "Get notified when someone follows you."; ObjectID = "ia2-u7-icn"; */
+"ia2-u7-icn.footerTitle" = "Reçois des messages quand quelqu'un vous suit.";
+
+/* Class = "UITableViewSection"; headerTitle = "Followers"; ObjectID = "ia2-u7-icn"; */
+"ia2-u7-icn.headerTitle" = "Disciples";
+
+/* Class = "UILabel"; text = "Username"; ObjectID = "irP-C8-z7e"; */
+"irP-C8-z7e.text" = "Username";
+
+/* Class = "UILabel"; text = "Username"; ObjectID = "jRC-na-svG"; */
+"jRC-na-svG.text" = "Username";
+
+/* Class = "UINavigationItem"; title = "Search"; ObjectID = "jwU-Wx-Ija"; */
+"jwU-Wx-Ija.title" = "Recherche";
+
+/* Class = "UITextView"; text = "User's bio"; ObjectID = "kX6-nK-sxP"; */
+"kX6-nK-sxP.text" = "Bio de l'utilisateur";
+
+/* Class = "UINavigationItem"; title = "Edit Profile"; ObjectID = "ny9-1A-LDN"; */
+"ny9-1A-LDN.title" = "Modifier le profil";
+
+/* Class = "UILabel"; text = "Following"; ObjectID = "oM0-ME-q4C"; */
+"oM0-ME-q4C.text" = "Suite";
+
+/* Class = "UISearchBar"; placeholder = "Search for a user"; ObjectID = "rkC-PW-vfI"; */
+"rkC-PW-vfI.placeholder" = "Recherche d'un utilisateur";
+
+/* Class = "UITextView"; text = "User's bio"; ObjectID = "rrg-vZ-Zy4"; */
+"rrg-vZ-Zy4.text" = "User's bio";
+
+/* Class = "UIBarButtonItem"; title = "Post"; ObjectID = "sHA-hI-QBj"; */
+"sHA-hI-QBj.title" = "Publier";
+
+/* Class = "UILabel"; text = "Username"; ObjectID = "tzq-Lq-iDG"; */
+"tzq-Lq-iDG.text" = "Username";
+
+/* Class = "UILabel"; text = "Real Name"; ObjectID = "w6S-Jx-Z52"; */
+"w6S-Jx-Z52.text" = "Real Name";
+
+/* Class = "UITextField"; placeholder = "Bio"; ObjectID = "zIk-RC-af1"; */
+"zIk-RC-af1.placeholder" = "Bio";
