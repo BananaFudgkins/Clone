@@ -21,6 +21,7 @@
 
 #import <UIKit/UIKit.h>
 
+<<<<<<< HEAD
 #import <Parse/PFConstants.h>
 
 #import <ParseUI/ParseUIConstants.h>
@@ -33,10 +34,23 @@ typedef void(^PFImageViewImageResultBlock)(UIImage *__nullable image,  NSError *
 @class PFFile;
 
 /**
+=======
+#import <ParseUI/ParseUIConstants.h>
+
+PFUI_ASSUME_NONNULL_BEGIN
+
+typedef void(^PFImageViewImageResultBlock)(UIImage *PFUI_NULLABLE_S image,  NSError *PFUI_NULLABLE_S error);
+
+@class BFTask;
+@class PFFile;
+
+/*!
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
  An image view that downloads and displays remote image stored on Parse's server.
  */
 @interface PFImageView : UIImageView
 
+<<<<<<< HEAD
 /**
  The remote file on Parse's server that stores the image.
 
@@ -66,14 +80,54 @@ typedef void(^PFImageViewImageResultBlock)(UIImage *__nullable image,  NSError *
  Initiate downloading of the remote image.
  
  Once the download completes, the remote image will be displayed.
+=======
+/*!
+ @abstract The remote file on Parse's server that stores the image.
+
+ @warning Note that the download does not start until <loadInBackground:> is called.
+ */
+@property (PFUI_NULLABLE_PROPERTY nonatomic, strong) PFFile *file;
+
+/*!
+ @abstract Initiate downloading of the remote image.
+
+ @discussion Once the download completes, the remote image will be displayed.
+
+ @returns The task, that encapsulates the work being done.
+ */
+- (BFTask *)loadInBackground;
+
+/*!
+ @abstract Initiate downloading of the remote image.
+
+ @discussion Once the download completes, the remote image will be displayed.
+
+ @param completion the completion block.
+ */
+- (void)loadInBackground:(PFUI_NULLABLE PFImageViewImageResultBlock)completion;
+
+/*!
+ @abstract Initiate downloading of the remote image.
+ 
+ @discussion Once the download completes, the remote image will be displayed.
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
  
  @param completion the completion block.
  @param progressBlock called with the download progress as the image is being downloaded. 
  Will be called with a value of 100 before the completion block is called.
  */
+<<<<<<< HEAD
 - (void)loadInBackground:(nullable PFImageViewImageResultBlock)completion
            progressBlock:(nullable void (^)(int percentDone))progressBlock;
 
 @end
 
 NS_ASSUME_NONNULL_END
+=======
+- (void)loadInBackground:(PFUI_NULLABLE PFImageViewImageResultBlock)completion
+           progressBlock:(PFUI_NULLABLE void (^)(int percentDone))progressBlock;
+
+@end
+
+PFUI_ASSUME_NONNULL_END
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944

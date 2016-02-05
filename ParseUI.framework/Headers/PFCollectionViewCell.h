@@ -23,17 +23,26 @@
 
 #import <ParseUI/ParseUIConstants.h>
 
+<<<<<<< HEAD
 NS_ASSUME_NONNULL_BEGIN
+=======
+PFUI_ASSUME_NONNULL_BEGIN
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
 
 @class PFImageView;
 @class PFObject;
 
+<<<<<<< HEAD
 /**
+=======
+/*!
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
  The `PFCollectionViewCell` class represents a collection view cell which can
  download and display remote images stored on Parse as well as has a default simple text label.
  */
 @interface PFCollectionViewCell : UICollectionViewCell
 
+<<<<<<< HEAD
 /**
  A simple lazy-loaded label for the collection view cell.
  */
@@ -41,21 +50,45 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  The lazy-loaded imageView of the collection view cell.
+=======
+/*!
+ @abstract A simple lazy-loaded label for the collection view cell.
+ */
+@property (nonatomic, strong, readonly) UILabel *textLabel;
+
+/*!
+ @abstract The lazy-loaded imageView of the collection view cell.
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
 
  @see PFImageView
  */
 @property (nonatomic, strong, readonly) PFImageView *imageView;
 
+<<<<<<< HEAD
 /**
  This method should update all the relevant information inside a subclass of `PFCollectionViewCell`.
 
  This method is automatically called by `PFQueryCollectionViewController` whenever the cell
+=======
+/*!
+ @abstract This method should update all the relevant information inside a subclass of `PFCollectionViewCell`.
+
+ @discussion This method is automatically called by <PFQueryCollectionViewController> whenever the cell
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
  should display new information. By default this method does nothing.
 
  @param object An instance of `PFObject` to update from.
  */
+<<<<<<< HEAD
 - (void)updateFromObject:(nullable PFObject *)object;
 
 @end
 
 NS_ASSUME_NONNULL_END
+=======
+- (void)updateFromObject:(PFUI_NULLABLE PFObject *)object;
+
+@end
+
+PFUI_ASSUME_NONNULL_END
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944

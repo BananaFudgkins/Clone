@@ -80,7 +80,11 @@
 - (void)setVisible:(BOOL)visible
 {
     // Skip when updating the same value, specially to avoid inovking KVO unnecessary
+<<<<<<< HEAD
     if (self.isVisible == visible) {
+=======
+    if (visible == self.isVisible) {
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
         return;
     }
     
@@ -92,7 +96,11 @@
     if (!visible) {
         [self slk_invalidateTimers];
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
     // Required implementation for key-value observer compliance
     [self didChangeValueForKey:NSStringFromSelector(@selector(isVisible))];
 }
@@ -244,7 +252,11 @@
     if (!username || ![self.usernames containsObject:username]) {
         return;
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
     [self.usernames removeObject:username];
     
     if (self.usernames.count > 0) {
@@ -306,7 +318,11 @@
 - (void)slk_setupConstraints
 {
     NSDictionary *views = @{@"textLabel": self.textLabel};
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[textLabel]|" options:0 metrics:nil views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-(0)-[textLabel]-(0@750)-|" options:0 metrics:nil views:views]];
     

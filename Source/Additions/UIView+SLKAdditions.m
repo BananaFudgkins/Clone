@@ -54,7 +54,11 @@
                             options:options
                          animations:^{
                              [self layoutIfNeeded];
+<<<<<<< HEAD
                              
+=======
+
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
                              if (animations) {
                                  animations();
                              }

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Clone WatchKit Extension/ImageInterfaceController.h">
+   </FileRef>
+   <FileRef
+      location = "group:Clone WatchKit Extension/ImageInterfaceController.m">
+   </FileRef>
+   <FileRef
+      location = "group:Clone WatchKit Extension/ProfilePageInterfaceController.h">
+   </FileRef>
+   <FileRef
+      location = "group:Clone WatchKit Extension/ProfilePageInterfaceController.m">
+   </FileRef>
+   <FileRef
+      location = "group:Clone WatchKit Extension/ErrorInterfaceController.h">
+   </FileRef>
+   <FileRef
+      location = "group:Clone WatchKit Extension/ErrorInterfaceController.m">
+   </FileRef>
+   <FileRef
+      location = "group:Clone WatchKit Extension/FeedRowController.h">
+   </FileRef>
+   <FileRef
+      location = "group:Clone WatchKit Extension/FeedRowController.m">
+   </FileRef>
+   <FileRef
+      location = "group:Clone Dist.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

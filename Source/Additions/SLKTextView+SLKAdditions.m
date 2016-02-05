@@ -151,7 +151,11 @@
         *rangePointer = [text rangeOfString:word];
         word = [[word componentsSeparatedByString:@"\n"] lastObject];
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
     return word;
 }
 
@@ -161,9 +165,16 @@
         return;
     }
     
+<<<<<<< HEAD
     SLKTextView *prepareInvocation = [self.undoManager prepareWithInvocationTarget:self];
     [prepareInvocation setText:self.text];
     [self.undoManager setActionName:description];
+=======
+	SLKTextView *prepareInvocation = [self.undoManager prepareWithInvocationTarget:self];
+	[prepareInvocation setText:self.text];
+	[self.undoManager setActionName:description];
+	
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
 }
 
 @end

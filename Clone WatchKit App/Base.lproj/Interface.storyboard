@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="15A216g" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Feed-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="Feed" id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <table alignment="left" id="EKF-Ss-OjH">
+                            <items>
+                                <tableRow identifier="post" id="Blf-PW-a29" customClass="FeedRowController">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="c5x-Ig-vc1">
+                                        <items>
+                                            <group width="1" alignment="left" id="qrS-fp-w6v">
+                                                <items>
+                                                    <group width="38" alignment="left" radius="19" id="T3g-mD-NyM">
+                                                        <items>
+                                                            <imageView alignment="left" id="k5H-M1-gw7"/>
+                                                        </items>
+                                                    </group>
+                                                    <label width="88" height="40" alignment="left" text="Username" textAlignment="left" id="h5L-iY-QYR">
+                                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                            <label alignment="left" text="Post content" numberOfLines="0" id="sv2-9Q-GtD">
+                                                <fontDescription key="font" type="system" pointSize="14"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="postContentInterfaceLabel" destination="sv2-9Q-GtD" id="NyC-HN-jjS"/>
+                                        <outlet property="profilePicInterfaceImage" destination="k5H-M1-gw7" id="VNn-eT-Ir7"/>
+                                        <outlet property="usernameInterfaceLabel" destination="h5L-iY-QYR" id="qhW-1u-Xky"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <menu key="menu" id="pEa-23-qw3">
+                        <items>
+                            <menuItem title="Compose" image="Compose" id="snG-Jm-0FY">
+                                <connections>
+                                    <action selector="composePressed" destination="AgC-eL-Hgc" id="GgL-GT-L1f"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="feedInterfaceTable" destination="EKF-Ss-OjH" id="f3B-mw-Jot"/>
+                        <segue destination="awy-RR-Y72" kind="relationship" relationship="nextPage" id="HgF-Hr-uOi"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="w9l-cs-Fk2">
+            <objects>
+                <controller title="Profile" id="awy-RR-Y72" customClass="ProfilePageInterfaceController">
+                    <items>
+                        <group width="49" height="45" alignment="center" radius="23" id="1gD-my-mIt">
+                            <items>
+                                <imageView width="100" height="45" alignment="center" id="2Uv-it-c7G"/>
+                            </items>
+                        </group>
+                        <label alignment="center" text="Username" textAlignment="center" id="hl8-eq-bK8">
+                            <fontDescription key="font" type="system" pointSize="18"/>
+                        </label>
+                        <label alignment="center" text="Real name" textAlignment="center" id="77v-xx-94F">
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
+                        <label alignment="center" text="Bio" textAlignment="center" numberOfLines="0" id="ws9-Xt-EnC"/>
+                    </items>
+                    <connections>
+                        <outlet property="bioInterfaceLabel" destination="ws9-Xt-EnC" id="wJ0-wU-dVg"/>
+                        <outlet property="profilePicInterfaceImage" destination="2Uv-it-c7G" id="Aad-nK-qUk"/>
+                        <outlet property="realNameInterfaceLabel" destination="77v-xx-94F" id="po4-hz-sB1"/>
+                        <outlet property="usernameInterfaceLabel" destination="hl8-eq-bK8" id="b4p-bd-ZV8"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="407" y="345"/>
+        </scene>
+        <!--Dismiss-->
+        <scene sceneID="Zhd-K8-9FI">
+            <objects>
+                <controller identifier="error" title="Dismiss" id="KUN-Y8-X2X" customClass="ErrorInterfaceController">
+                    <items>
+                        <label width="1" alignment="center" text="Error" textAlignment="center" id="ubm-fG-OaO">
+                            <fontDescription key="font" type="system" pointSize="20"/>
+                        </label>
+                        <label alignment="center" text="Label" textAlignment="center" numberOfLines="0" id="oQu-I9-848">
+                            <fontDescription key="font" type="system" pointSize="17"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="errorDescriptionInterfaceLabel" destination="oQu-I9-848" id="EkB-F7-bOU"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="583" y="348"/>
+        </scene>
+        <!--Dismiss-->
+        <scene sceneID="zY6-nX-23k">
+            <objects>
+                <controller identifier="loggedout" title="Dismiss" id="7FN-DP-ldx">
+                    <items>
+                        <label alignment="center" text="Not logged in" id="ifP-jQ-P4A">
+                            <fontDescription key="font" type="system" pointSize="20"/>
+                        </label>
+                        <label alignment="center" text="You are not logged in to Clone. Please login on your iPhone and try again." textAlignment="center" numberOfLines="0" id="kUA-pS-5G5">
+                            <fontDescription key="font" type="system" pointSize="18"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="755" y="346"/>
+        </scene>
+        <!--Done-->
+        <scene sceneID="D3s-rw-aaW">
+            <objects>
+                <controller identifier="image" title="Done" id="0RX-2Q-2nB" customClass="ImageInterfaceController">
+                    <items>
+                        <imageView alignment="center" verticalAlignment="center" contentMode="scaleAspectFill" id="hsG-xI-etO"/>
+                    </items>
+                    <connections>
+                        <outlet property="postInterfaceImage" destination="hsG-xI-etO" id="ZpZ-YG-Lb8"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="930" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <color key="backgroundColor" red="0.18039215689999999" green="0.54117647059999996" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController">
+                    <color key="backgroundColor" red="0.1803921568627451" green="0.54117647058823526" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.1803921568627451" green="0.54117647058823526" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+</document>

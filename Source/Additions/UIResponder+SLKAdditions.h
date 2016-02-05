@@ -26,4 +26,8 @@
  */
 + (instancetype)slk_currentFirstResponder;
 
+<<<<<<< HEAD
 @end
+=======
+@end
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944

@@ -16,9 +16,17 @@
 
 #import <UIKit/UIKit.h>
 
+<<<<<<< HEAD
 @interface SLKInputAccessoryView : UIView
 
 /* The system keyboard view used as reference. */
 @property (nonatomic, weak, readonly) UIView *keyboardViewProxy;
 
 @end
+=======
+UIKIT_EXTERN NSString * const SLKInputAccessoryViewKeyboardFrameDidChangeNotification;
+
+@interface SLKInputAccessoryView : UIView
+
+@end
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944

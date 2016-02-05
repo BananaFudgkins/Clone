@@ -29,8 +29,11 @@
 @property (nonatomic, strong) NSLayoutConstraint *bottomMarginWC;
 @property (nonatomic, strong) NSLayoutConstraint *rightButtonWC;
 @property (nonatomic, strong) NSLayoutConstraint *rightMarginWC;
+<<<<<<< HEAD
 @property (nonatomic, strong) NSLayoutConstraint *rightButtonTopMarginC;
 @property (nonatomic, strong) NSLayoutConstraint *rightButtonBottomMarginC;
+=======
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
 @property (nonatomic, strong) NSLayoutConstraint *editorContentViewHC;
 @property (nonatomic, strong) NSArray *charCountLabelVCs;
 
@@ -77,13 +80,21 @@
     self.autoHideRightButton = YES;
     self.editorContentViewHeight = 38.0;
     self.contentInset = UIEdgeInsetsMake(5.0, 8.0, 5.0, 8.0);
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
     [self addSubview:self.editorContentView];
     [self addSubview:self.leftButton];
     [self addSubview:self.rightButton];
     [self addSubview:self.textView];
     [self addSubview:self.charCountLabel];
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
     [self slk_setupViewConstraints];
     [self slk_updateConstraintConstants];
     
@@ -94,7 +105,10 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(slk_didChangeTextViewContentSize:) name:SLKTextViewContentSizeDidChangeNotification object:nil];
     
     [self.leftButton.imageView addObserver:self forKeyPath:NSStringFromSelector(@selector(image)) options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:NULL];
+<<<<<<< HEAD
     [self.rightButton.titleLabel addObserver:self forKeyPath:NSStringFromSelector(@selector(font)) options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:NULL];
+=======
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
 }
 
 
@@ -448,7 +462,11 @@
     if (self.isEditing && [self.textView.text isEqualToString:text]) {
         return NO;
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
     return YES;
 }
 
@@ -583,10 +601,20 @@
 
 - (void)slk_setupViewConstraints
 {
+<<<<<<< HEAD
     [self.rightButton sizeToFit];
     
     CGFloat rightVerMargin = (self.intrinsicContentSize.height - CGRectGetHeight(self.rightButton.frame)) / 2.0;
     
+=======
+    UIImage *leftButtonImg = [self.leftButton imageForState:UIControlStateNormal];
+    
+    [self.rightButton sizeToFit];
+    
+    CGFloat leftVerMargin = (self.intrinsicContentSize.height - leftButtonImg.size.height) / 2.0;
+    CGFloat rightVerMargin = (self.intrinsicContentSize.height - CGRectGetHeight(self.rightButton.frame)) / 2.0;
+
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
     NSDictionary *views = @{@"textView": self.textView,
                             @"leftButton": self.leftButton,
                             @"rightButton": self.rightButton,
@@ -598,6 +626,10 @@
                               @"bottom" : @(self.contentInset.bottom),
                               @"left" : @(self.contentInset.left),
                               @"right" : @(self.contentInset.right),
+<<<<<<< HEAD
+=======
+                              @"leftVerMargin" : @(leftVerMargin),
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
                               @"rightVerMargin" : @(rightVerMargin),
                               @"minTextViewHeight" : @(self.textView.intrinsicContentSize.height),
                               };
@@ -617,18 +649,28 @@
     
     self.leftMarginWC = [self slk_constraintsForAttribute:NSLayoutAttributeLeading][0];
     self.bottomMarginWC = [self slk_constraintForAttribute:NSLayoutAttributeBottom firstItem:self secondItem:self.leftButton];
+<<<<<<< HEAD
     
     self.rightButtonWC = [self slk_constraintForAttribute:NSLayoutAttributeWidth firstItem:self.rightButton secondItem:nil];
     self.rightMarginWC = [self slk_constraintsForAttribute:NSLayoutAttributeTrailing][0];
     
     self.rightButtonTopMarginC = [self slk_constraintForAttribute:NSLayoutAttributeTop firstItem:self.rightButton secondItem:self];
     self.rightButtonBottomMarginC = [self slk_constraintForAttribute:NSLayoutAttributeBottom firstItem:self secondItem:self.rightButton];
+=======
+
+    self.rightButtonWC = [self slk_constraintForAttribute:NSLayoutAttributeWidth firstItem:self.rightButton secondItem:nil];
+    self.rightMarginWC = [self slk_constraintsForAttribute:NSLayoutAttributeTrailing][0];
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
 }
 
 - (void)slk_updateConstraintConstants
 {
     CGFloat zero = 0.0;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
     if (self.isEditing)
     {
         self.editorContentViewHC.constant = self.editorContentViewHeight;
@@ -641,7 +683,11 @@
     }
     else {
         self.editorContentViewHC.constant = zero;
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
         CGSize leftButtonSize = [self.leftButton imageForState:self.leftButton.state].size;
         
         if (leftButtonSize.width > 0) {
@@ -654,6 +700,7 @@
         
         self.rightButtonWC.constant = [self slk_appropriateRightButtonWidth];
         self.rightMarginWC.constant = [self slk_appropriateRightButtonMargin];
+<<<<<<< HEAD
         
         [self.rightButton sizeToFit];
         
@@ -661,6 +708,8 @@
         
         self.rightButtonTopMarginC.constant = rightVerMargin;
         self.rightButtonBottomMarginC.constant = rightVerMargin;
+=======
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
     }
 }
 
@@ -678,9 +727,12 @@
         
         [self slk_updateConstraintConstants];
     }
+<<<<<<< HEAD
     else if ([object isEqual:self.rightButton.titleLabel] && [keyPath isEqualToString:NSStringFromSelector(@selector(font))]) {
         [self slk_updateConstraintConstants];
     }
+=======
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
     else {
         [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
     }
@@ -695,7 +747,10 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self name:SLKTextViewContentSizeDidChangeNotification object:nil];
     
     [_leftButton.imageView removeObserver:self forKeyPath:NSStringFromSelector(@selector(image))];
+<<<<<<< HEAD
     [_rightButton.titleLabel removeObserver:self forKeyPath:NSStringFromSelector(@selector(font))];
+=======
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
     
     _leftButton = nil;
     _rightButton = nil;
@@ -714,8 +769,11 @@
     _bottomMarginWC = nil;
     _rightButtonWC = nil;
     _rightMarginWC = nil;
+<<<<<<< HEAD
     _rightButtonTopMarginC = nil;
     _rightButtonBottomMarginC = nil;
+=======
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
     _editorContentViewHC = nil;
 }
 

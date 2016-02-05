@@ -4,17 +4,84 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+<<<<<<< HEAD
 		<key>Bolts.xcscheme</key>
+=======
+		<key>Appirater-Appirater.xcscheme</key>
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
+<<<<<<< HEAD
 		<key>Parse.xcscheme</key>
+=======
+		<key>Appirater.xcscheme</key>
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
+<<<<<<< HEAD
 		<key>Pods-CloneWatch Extension.xcscheme</key>
+=======
+		<key>DACircularProgress.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>DXTimestamper-DXTimestamper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>DXTimestamper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>JSQMessagesViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>JSQSystemSoundPlayer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>LGRefreshView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MWPhotoBrowser-MWPhotoBrowser.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MWPhotoBrowser.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>pop.xcscheme</key>
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +89,84 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+<<<<<<< HEAD
 		<key>3C40AD938D23DF5F8345D23B4D3E1644</key>
+=======
+		<key>0A69E72B7004A468CBB20B75A7A35435</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>12B5AA773122F10F56A3765AC6CCDE20</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1FCB4C2FCBD9A6A1B0A5C39863F72D11</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>36C93657A366D38D5126AFDAAE5F7AA2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>47C800E42623009B7192B025B3DD25A1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5352D432641F0656C90741034E32F31E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5566E497F318BEFB02C94891F5551455</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6EB66011A2F66B93431B07CCB10A0B07</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>891EEB853A3206C0CD2C076B9CC59EA4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8FBA13D4438314A5157D0F7635369BAB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ADBD5B7D07A182E2A01F95FD2F7BDC9A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D421B4C27CC78CBCF0F5D892E3EBA56B</key>
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+<<<<<<< HEAD
 		<key>B7BFE9AFEE23B27411C846ECAC9677B4</key>
+=======
+		<key>DA53FD6E84A57931272AECC0CA5CEC1E</key>
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
+<<<<<<< HEAD
 		<key>F10CA071C572DEB7C0060933A856AC0B</key>
+=======
+		<key>FAB73EED930BFEF3646E7B4896363386</key>
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
 		<dict>
 			<key>primary</key>
 			<true/>

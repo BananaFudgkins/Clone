@@ -21,18 +21,31 @@
 
 #import <UIKit/UIKit.h>
 
+<<<<<<< HEAD
 #import <Parse/PFConstants.h>
 #import <ParseUI/ParseUIConstants.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @class BFTask<__covariant BFGenericType>;
+=======
+#import <ParseUI/ParseUIConstants.h>
+
+PFUI_ASSUME_NONNULL_BEGIN
+
+@class BFTask;
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
 @class PFCollectionViewCell;
 @class PFObject;
 @class PFQuery;
 
+<<<<<<< HEAD
 /**
  This class allows you to think about a one-to-one mapping between a `PFObject` and a `UICollectionViewCell`,
+=======
+/*!
+ This class allows you to think about a one-to-one mapping between a <PFObject> and a `UICollectionViewCell`,
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
  rather than having to juggle index paths.
 
  You also get the following features out of the box:
@@ -44,6 +57,7 @@ NS_ASSUME_NONNULL_BEGIN
  - Automatic loading and management of the objects array.
  - Various methods that can be overridden to customize behavior at major events in the data cycle.
 
+<<<<<<< HEAD
  @see `PFCollectionViewCell`
  */
 @interface PFQueryCollectionViewController : UICollectionViewController <UICollectionViewDelegateFlowLayout>
@@ -75,6 +89,39 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  Whether the collection is actively loading new data from the server.
+=======
+ @see PFCollectionViewCell
+ */
+@interface PFQueryCollectionViewController : UICollectionViewController <UICollectionViewDelegateFlowLayout>
+
+/*!
+ @abstract The class name of the <PFObject> this collection will use as a datasource.
+ */
+@property (PFUI_NULLABLE_PROPERTY nonatomic, copy) IBInspectable NSString *parseClassName;
+
+/*!
+ @abstract Whether the collection should use the default loading view. Default - `YES`.
+ */
+@property (nonatomic, assign) IBInspectable BOOL loadingViewEnabled;
+
+/*!
+ @abstract Whether the collection should use the built-in pull-to-refresh feature. Defualt - `YES`.
+ */
+@property (nonatomic, assign) IBInspectable BOOL pullToRefreshEnabled;
+
+/*!
+ @abstract Whether the collection should use the built-in pagination feature. Default - `YES`.
+ */
+@property (nonatomic, assign) IBInspectable BOOL paginationEnabled;
+
+/*!
+ @abstract The number of objects to show per page. Default - `25`.
+ */
+@property (nonatomic, assign) IBInspectable NSUInteger objectsPerPage;
+
+/*!
+ @abstract Whether the collection is actively loading new data from the server.
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
  */
 @property (nonatomic, assign, getter=isLoading) BOOL loading;
 
@@ -82,6 +129,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @name Creating a PFQueryCollectionViewController
 ///--------------------------------------
 
+<<<<<<< HEAD
 /**
  Initializes a view controller with a `UICollectionViewFlowLayout` and a class name
  of `PFObject` that will be associated with this collection.
@@ -102,28 +150,63 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (instancetype)initWithCollectionViewLayout:(UICollectionViewLayout *)layout
                                    className:(nullable NSString *)className NS_DESIGNATED_INITIALIZER;
+=======
+/*!
+ @abstract Initializes a view controller with a `UICollectionViewFlowLayout` and a class name
+ of <PFObject> that will be associated with this collection.
+
+ @param className The class name of the instances of <PFObject> that this table will display.
+
+ @returns An initialized `PFQueryCollectionViewController` object or `nil` if the object couldn't be created.
+ */
+- (instancetype)initWithClassName:(PFUI_NULLABLE NSString *)className;
+
+/*!
+ @abstract Initializes a view controller with a class name of <PFObject> that will be associated with this collection.
+
+ @param layout    Layout for collection view to use.
+ @param className The class name of the instances of <PFObject> that this table will display.
+
+ @returns An initialized `PFQueryCollectionViewController` object or `nil` if the object couldn't be created.
+ */
+- (instancetype)initWithCollectionViewLayout:(UICollectionViewLayout *)layout
+                                   className:(PFUI_NULLABLE NSString *)className NS_DESIGNATED_INITIALIZER;
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
 
 ///--------------------------------------
 /// @name Responding to Events
 ///--------------------------------------
 
+<<<<<<< HEAD
 /**
+=======
+/*!
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
  Called when objects will be loaded from Parse. If you override this method, you must
  call [super objectsWillLoad] in your implementation.
  */
 - (void)objectsWillLoad NS_REQUIRES_SUPER;
 
+<<<<<<< HEAD
 /**
+=======
+/*!
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
  Called when objects have loaded from Parse. If you override this method, you must
  call [super objectsDidLoad:] in your implementation.
  @param error The Parse error from running the PFQuery, if there was any.
  */
+<<<<<<< HEAD
 - (void)objectsDidLoad:(nullable NSError *)error NS_REQUIRES_SUPER;
+=======
+- (void)objectsDidLoad:(PFUI_NULLABLE NSError *)error NS_REQUIRES_SUPER;
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
 
 ///--------------------------------------
 /// @name Accessing Results
 ///--------------------------------------
 
+<<<<<<< HEAD
 /**
  The array of instances of `PFObject` that is used as a data source.
  */
@@ -133,10 +216,22 @@ NS_ASSUME_NONNULL_BEGIN
  Returns an object at a particular indexPath.
 
  The default impementation returns the object at `indexPath.item`.
+=======
+/*!
+ @abstract The array of instances of <PFObject> that is used as a data source.
+ */
+@property (nonatomic, copy, readonly) NSArray *objects;
+
+/*!
+ @abstract Returns an object at a particular indexPath.
+
+ @discussion The default impementation returns the object at `indexPath.item`.
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
  If you want to return objects in a different indexPath order, like for sections, override this method.
 
  @param indexPath An instance of `NSIndexPath`.
 
+<<<<<<< HEAD
  @return The object at the specified indexPath.
  */
 - (nullable PFObject *)objectAtIndexPath:(nullable NSIndexPath *)indexPath;
@@ -150,11 +245,27 @@ NS_ASSUME_NONNULL_BEGIN
  Removes all objects at the specified index paths, animated.
  */
 - (void)removeObjectsAtIndexPaths:(nullable NSArray<NSIndexPath *> *)indexes;
+=======
+ @returns The object at the specified indexPath.
+ */
+- (PFUI_NULLABLE PFObject *)objectAtIndexPath:(PFUI_NULLABLE NSIndexPath *)indexPath;
+
+/*!
+ @abstract Removes an object at the specified index path, animated.
+ */
+- (void)removeObjectAtIndexPath:(PFUI_NULLABLE NSIndexPath *)indexPath;
+
+/*!
+ @abstract Removes all objects at the specified index paths, animated.
+ */
+- (void)removeObjectsAtIndexPaths:(PFUI_NULLABLE NSArray *)indexes;
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
 
 ///--------------------------------------
 /// @name Loading Data
 ///--------------------------------------
 
+<<<<<<< HEAD
 /**
  Clears the collection view and loads the first page of objects.
 
@@ -164,11 +275,23 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  Loads the objects of the `PFObject.parseClassName` at the specified page and appends it to the
+=======
+/*!
+ @abstract Clears the collection view and loads the first page of objects.
+
+ @returns An awaitable task that completes when the reload succeeds
+ */
+- (BFTask *)loadObjects;
+
+/*!
+ @abstract Loads the objects of the <parseClassName> at the specified page and appends it to the
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
  objects already loaded and refreshes the collection.
 
  @param page  The page of objects to load.
  @param clear Whether to clear the collection view after receiving the objects.
 
+<<<<<<< HEAD
  @return An awaitable task that completes when the reload succeeds
  */
 - (BFTask<NSArray<__kindof PFObject *> *> *)loadObjects:(NSInteger)page clear:(BOOL)clear;
@@ -180,6 +303,19 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  Clears the collection view of all objects.
+=======
+ @returns An awaitable task that completes when the reload succeeds
+ */
+- (BFTask *)loadObjects:(NSInteger)page clear:(BOOL)clear;
+
+/*!
+ @abstract Loads the next page of objects, appends to table, and refreshes.
+ */
+- (void)loadNextPage;
+
+/*!
+ @abstract Clears the collection view of all objects.
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
  */
 - (void)clear;
 
@@ -187,10 +323,17 @@ NS_ASSUME_NONNULL_BEGIN
 /// @name Querying
 ///--------------------------------------
 
+<<<<<<< HEAD
 /**
  Override to construct your own custom `PFQuery` to get the objects.
 
  @return An instance of `PFQuery` that `-loadObjects` method will use to the objects for this collection.
+=======
+/*!
+ @abstract Override to construct your own custom <PFQuery> to get the objects.
+
+ @returns An instance of <PFQuery> that <loadObjects> method will use to the objects for this collection.
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
  */
 - (PFQuery *)queryForCollection;
 
@@ -198,6 +341,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @name Data Source Methods
 ///--------------------------------------
 
+<<<<<<< HEAD
 /**
  Override this method to customize each cell given a `PFObject` that is loaded.
 
@@ -215,10 +359,30 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  Override this method to customize the view that allows the user to load the
+=======
+/*!
+ @abstract Override this method to customize each cell given a <PFObject> that is loaded.
+
+ @warning The cell should inherit from <PFCollectionViewCell> which is a subclass of `UICollectionViewCell`.
+
+ @param collectionView The collection view object associated with this controller.
+ @param indexPath      The indexPath of the cell.
+ @param object         The <PFObject> that is associated with the cell.
+
+ @returns The cell that represents this object.
+ */
+- (PFUI_NULLABLE PFCollectionViewCell *)collectionView:(UICollectionView *)collectionView
+                                cellForItemAtIndexPath:(NSIndexPath *)indexPath
+                                                object:(PFUI_NULLABLE PFObject *)object;
+
+/*!
+ @discussion Override this method to customize the view that allows the user to load the
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
  next page when pagination is turned on.
 
  @param collectionView The collection view object associated with this controller.
 
+<<<<<<< HEAD
  @return The view that allows the user to paginate.
  */
 - (nullable UICollectionReusableView *)collectionViewReusableViewForNextPageAction:(UICollectionView *)collectionView;
@@ -226,3 +390,12 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+=======
+ @returns The view that allows the user to paginate.
+ */
+- (PFUI_NULLABLE UICollectionReusableView *)collectionViewReusableViewForNextPageAction:(UICollectionView *)collectionView;
+
+@end
+
+PFUI_ASSUME_NONNULL_END
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944

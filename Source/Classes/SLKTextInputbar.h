@@ -101,7 +101,11 @@ typedef NS_ENUM(NSUInteger, SLKCounterPosition) {
 /** A Boolean value indicating whether the control is in edit mode. */
 @property (nonatomic, getter = isEditing) BOOL editing;
 
+<<<<<<< HEAD
 /**
+=======
+/** 
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
  Verifies if the text can be edited.
  
  @param text The text to be edited.

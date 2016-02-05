@@ -1,4 +1,5 @@
 PODS:
+<<<<<<< HEAD
   - Bolts/Tasks (1.4.0)
   - Parse (1.9.0):
     - Bolts/Tasks (>= 1.3.0)
@@ -21,3 +22,44 @@ SPEC CHECKSUMS:
   Parse: 4ab4c30330b19384b878c484ad577ee88dad08db
 
 COCOAPODS: 0.39.0
+=======
+  - Appirater (2.0.5)
+  - DACircularProgress (2.3.1)
+  - DXTimestamper (0.1.0)
+  - JSQMessagesViewController (7.1.0):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
+  - LGRefreshView (1.0.1):
+    - DACircularProgress (~> 2.3.1)
+  - MBProgressHUD (0.9.1)
+  - MWPhotoBrowser (2.1.1):
+    - DACircularProgress (~> 2.3)
+    - MBProgressHUD (~> 0.9)
+    - SDWebImage (!= 3.7.2, ~> 3.7)
+  - pop (1.0.7)
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
+
+DEPENDENCIES:
+  - Appirater
+  - DXTimestamper
+  - JSQMessagesViewController
+  - LGRefreshView
+  - MWPhotoBrowser
+  - pop
+
+SPEC CHECKSUMS:
+  Appirater: e7c0a47fb67ee5041ce8479e6ba960927fb40264
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  DXTimestamper: 820bfa89bd230a108e421a66249ad55d08269a6a
+  JSQMessagesViewController: ca11f86fa68ca70835f05e169df9244147c1dc40
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
+  LGRefreshView: 139a2383ec59eae0089de81965c410fa12c679aa
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  MWPhotoBrowser: ba0d0c09ffda3a7ea10093518738c502c1c7141c
+  pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+
+COCOAPODS: 0.38.2
+>>>>>>> 2a3cbcc766224b91151fa0aada91788572b24944
